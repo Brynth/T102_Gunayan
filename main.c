@@ -1,24 +1,39 @@
 #include <stdio.h>
 
-int main()
-{
-   int num1;
-   int num2;
-   int num3;
-   int result;
 
-   printf("input the fisrt number:");
-   scanf("%d",&num1);
-   printf("input the second number:");
-   scanf("%d",&num2);
-   printf("input the third number:");
-   scanf("%d",&num3);
-   //divide and times
-   result = num1 / num2 * num3;
-   printf("\n%d divide %d * %d is %d",num1,num2,num3,result);
-
-
-
-
-
+int main(){
+  int temp;
+  printf("please put temperature:");
+  scanf("%d",&temp);
+  if(temp < 0){
+    printf("The weather is freezing");
 }
+ else if(temp >= 0 && temp <= 10){
+       printf("The weather is very cold");
+}
+ else if(temp >= 10 && temp <= 20){
+       printf("The weather cold");
+}
+ else if(temp >= 20 && temp <= 30){
+       printf("The weather is normal");
+}
+ else if(temp >= 30 && temp <= 40){
+       printf("The weather is hot");
+}
+ else if(temp>=40){
+     printf("the weather is very hot");
+}
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
